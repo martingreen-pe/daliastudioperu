@@ -1,0 +1,60 @@
+---
+import "../styles/services.css";
+import Layout from '../layouts/Layout.astro';
+
+// Cargar el archivo JSON desde el directorio público
+const servicesData = await Astro.glob('../../public/data/services.json');
+const services = servicesData[0].services;
+---
+
+<Layout>
+  <section class="services">
+    <h1 class="services__title">Nuestros Servicios</h1>
+
+    <!-- Iterar sobre cada servicio -->
+    <div class="services__grid">
+      {services.map(service => (
+        <div class="service-card" data-servicio={service.servicio}>
+          <img src={service.imagen} alt={service.servicio} class="service-card__image" />
+          <h2 class="service-card__title">{service.servicio}</h2>
+          <p class="service-card__details">{service.detalles}</p>
+          <p class="service-card__duration"><strong>Duración:</strong> {service.duracion}</p>
+          <p class="service-card__price"><strong>Precio:</strong> {service.precio}</p>
+          <p class="service-card__clients"><strong>Clientes:</strong> {service.clientes}</p>
+
+          <!-- Mostrar técnicas si existen -->
+          {service.tecnicas && (
+            <details class="service-card__tecnicas">
+              <summary>Técnicas Disponibles</summary>
+              <ul>
+                {service.tecnicas.map(technique => (
+                  <li data-technique={technique.nombre}>
+                    <strong>{technique.nombre}:</strong> {technique.descripcion}<br />
+                    <strong>Precio:</strong> {technique.precio}, <strong>Retoque:</strong> {technique.precioRetoque}
+                    <img src={technique.imagen} alt={technique.nombre} class="technique__image" />
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+
+          <!-- Mostrar subservicios si existen -->
+          {service.subservicios && (
+            <details class="service-card__subservicios">
+              <summary>Subservicios Disponibles</summary>
+              <ul>
+                {service.subservicios.map(sub => (
+                  <li data-subservicio={sub.nombre}>
+                    <strong>{sub.nombre}:</strong> {sub.detalles}<br />
+                    <strong>Duración:</strong> {sub.duracion}, <strong>Precio:</strong> {sub.precio}
+                    <img src={sub.imagen} alt={sub.nombre} class="subservice__image" />
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
