@@ -1,0 +1,38 @@
+---
+import "../styles/featured-services.css";
+
+// Cargar los datos de los servicios desde el archivo JSON
+const servicesData = await Astro.glob('../../public/data/services.json');
+
+// Seleccionar los servicios específicos
+const featuredServices = [
+  servicesData[0].services.find(service => service.servicio === 'Uñas Acrílicas'),
+  servicesData[0].services.find(service => service.servicio === 'Extensiones de Pestañas').tecnicas.find(technique => technique.nombre === 'Extensiones Clásicas'),
+  servicesData[0].services.find(service => service.servicio === 'Depilación y Cejas').subservicios.find(sub => sub.nombre === 'Planchado de Cejas'),
+];
+
+// Lógica para redireccionar según el servicio
+const getLink = (service) => {
+  if (service.servicio === 'Uñas Acrílicas') {
+    return '/unas';
+  } else if (service.nombre === 'Extensiones Clásicas') {
+    return '/pestanas';
+  } else if (service.nombre === 'Planchado de Cejas') {
+    return '/depilacion';
+  }
+};
+---
+<section class="featured-services">
+  <h2 class="featured-services__title">Nuestros Servicios Destacados</h2>
+  <div class="featured-services__grid">
+    {featuredServices.map(service => (
+      <div class="service-card">
+        <img src={service.imagen} alt={service.servicio || service.nombre} class="service-card__image" />
+        <h3 class="service-card__title">{service.servicio || service.nombre}</h3>
+        <p class="service-card__description">{service.detalles || service.descripcion}</p>
+        <p class="service-card__price"><strong>Precio:</strong> {service.precio}</p>
+        <a href={getLink(service)} class="service-card__link">Ver más</a>
+      </div>
+    ))}
+  </div>
+</section>

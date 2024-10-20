@@ -1,0 +1,46 @@
+---
+import "../styles/acerca.css";
+import Layout from '../layouts/Layout.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import SocialButtons from "../components/SocialButtons.astro";
+---
+<Layout>
+  <section class="about">
+    <div class="hero">
+      <h1 class="hero__title">Acerca de Dalia Studio</h1>
+      <p class="hero__subtitle">
+        Somos un salón especializado en uñas y pestañas, reconocido por la excelencia en nuestros servicios y atención al detalle. 
+      </p>
+    </div>
+
+    <!-- Historia y Premios -->
+    <div class="about__content">
+      <h2 class="about__title">Nuestra Historia</h2>
+      <p class="about__text">
+        En Dalia Studio, nuestra misión es realzar la belleza natural de cada cliente. Desde nuestro inicio, hemos trabajado con pasión y dedicación, especializándonos en el cuidado de uñas y pestañas. Gracias a nuestro esfuerzo, hemos ganado varios premios en concursos y eventos, incluyendo:
+      </p>
+      <ul class="about__awards">
+        <li>🏆 <strong>Copa Perú Nails 2024</strong> - Primer puesto</li>
+        <li>🏆 <strong>Manicure Mania Perú 2024</strong> - Primer puesto</li>
+      </ul>
+
+      <p class="about__text">
+        Nos destacamos por brindar un servicio personalizado, siempre a la vanguardia de las tendencias de belleza. Ya sea que desees uñas acrílicas, polygel, o extensiones de pestañas, nuestro equipo de expertos está aquí para ayudarte a lucir tu mejor versión.
+      </p>
+
+      <!-- Componente de WhatsApp -->
+      <SocialButtons />
+    </div>
+
+    <!-- Información de contacto -->
+    <div class="contact">
+      <h2 class="contact__title">Contáctanos</h2>
+      <p class="contact__text">Estamos ubicados en Huaral, Lima, Perú.</p>
+      <p class="contact__text"><strong>Teléfono:</strong> +51 999 888 777</p>
+      <p class="contact__text"><strong>Correo:</strong> contacto@daliastudio.com</p>
+      
+      <!-- Componente de WhatsApp reutilizado -->
+      <WhatsAppButton />
+    </div>
+  </section>
+</Layout>

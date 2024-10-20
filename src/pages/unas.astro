@@ -1,0 +1,54 @@
+---
+import "../styles/unas.css";
+import Layout from '../layouts/Layout.astro';
+
+// Cargar el archivo JSON de servicios de uñas y pedicura desde el directorio público
+const servicesData = await Astro.glob('../../public/data/services.json');
+
+// Filtrar solo los servicios que incluyen "Uñas", "Manicura" y "Pedicura"
+const unasServices = servicesData[0].services.filter(service => 
+  service.servicio.includes("Uñas") || service.servicio.includes("Manicura") || service.servicio === "Pedicura"
+);
+---
+<Layout>
+  <section class="unas">
+    <div class="hero">
+      <h1 class="hero__title">Nuestros Servicios de Uñas</h1>
+      <p class="hero__subtitle">Descubre nuestras especialidades en uñas, manicura y pedicura, y dale a tus manos y pies el cuidado que se merecen.</p>
+    </div>
+
+    <!-- Información general sobre los precios de las uñas -->
+    <div class="general-info">
+      <p class="general-info__text">
+        <strong>Nota Importante:</strong> El precio base es para uñas de largo número 2 y diseños como francesa, unicolor o estructural. El costo puede aumentar según el diseño, los accesorios (pedrería, decoraciones) y la longitud de las uñas.
+      </p>
+    </div>
+
+    <div class="services">
+      <h2 class="services__title">Servicios de Uñas</h2>
+      <div class="services__grid">
+        {unasServices.map((service) => (
+          <div class="service-card">
+            <img src={service.imagen} alt={service.servicio} class="service-card__image" />
+            <h3 class="service-card__title">{service.servicio}</h3>
+            <p class="service-card__details">{service.detalles}</p>
+            <p class="service-card__duration"><strong>Duración:</strong> {service.duracion}</p>
+            <p class="service-card__price"><strong>Precio:</strong> {service.precio}</p>
+            <p class="service-card__clients"><strong>Clientes:</strong> {service.clientes}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h2 class="gallery__title">Galería de Trabajos</h2>
+      <div class="gallery__grid">
+        <img src="/images/gallery/unas_1.jpg" alt="Trabajo de uñas 1" class="gallery__image" />
+        <img src="/images/gallery/unas_2.jpg" alt="Trabajo de uñas 2" class="gallery__image" />
+        <img src="/images/gallery/unas_3.jpg" alt="Trabajo de uñas 3" class="gallery__image" />
+        <img src="/images/gallery/unas_4.jpg" alt="Trabajo de uñas 4" class="gallery__image" />
+        <!-- Agrega más imágenes según sea necesario -->
+      </div>
+    </div>
+  </section>
+</Layout>

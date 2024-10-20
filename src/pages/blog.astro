@@ -1,0 +1,23 @@
+---
+import BlogCard from '../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const posts = await getCollection('posts');
+---
+<Layout>
+    <section class="blog">
+    <h1>Blog</h1>
+    <div class="blog__grid">
+        {posts.map(post => (
+        <BlogCard 
+            title={post.data.title}
+            description={post.data.description}
+            image={post.data.image}
+            slug={post.slug}
+            tags={post.data.tags}
+        />
+        ))}
+    </div>
+    </section>
+</Layout>

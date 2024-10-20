@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import "../styles/blog-card.css";
+
+const posts = await getCollection('posts');
+
+// Filtramos los tres primeros posts
+const latestPosts = posts.slice(0, 3);
+
+// Función para truncar el texto
+function truncate(text, length) {
+  return text.length > length ? text.substring(0, length) + '...' : text;
+}
+
+// Función para obtener la URL de la imagen
+function getImageUrl(post) {
+  // Si 'post.data.image' ya tiene la ruta correcta, la usamos tal cual
+  if (post.data.image && post.data.image.startsWith('/images/posts-images/')) {
+    return post.data.image; // Ya tiene la ruta correcta
+  }
+  // Si solo contiene el nombre de la imagen, construimos la ruta completa
+  return `/images/posts-images/${post.slug}/${post.data.image}`;
+}
+---
+
+<section class="blog-section">
+  <h2>Últimas publicaciones</h2>
+  <div class="post-grid">
+    {posts.map((post) => (
+      <article class="post-card">
+        {post.data.image && (
+          <img src={getImageUrl(post)} alt={post.data.title} class="post-card__image" />
+        )}
+        <div class="post-content">
+          <h3>{post.data.title}</h3>
+          <p>{truncate(post.data.description, 100)}</p>
+          <div class="tags">
+            {post.data.tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+          <a href={`/blog/${post.slug}`} class="post-card__link">Leer más</a>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

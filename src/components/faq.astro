@@ -1,0 +1,15 @@
+---
+import faqData from '../../public/data/faq.json';
+import "../styles/faq.css";
+---
+<section class="faq">
+  <h2 class="faq__title">Preguntas Frecuentes</h2>
+  <div class="faq__list">
+    {faqData.faqs.map(faq => (
+      <details class="faq-item">
+        <summary class="faq-item__question">{faq.pregunta}</summary>
+        <p class="faq-item__answer">{faq.respuesta}</p>
+      </details>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,169 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Logo */
+.header__logo-image {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+
+.header__logo-image:hover {
+  transform: scale(1.1); /* Zoom en hover para interactividad */
+}
+
+@media (min-width: 768px) {
+  .header__logo-image {
+    width: 150px;
+  }
+}
+
+/* Menú de navegación: Visible en pantallas grandes */
+.header__nav {
+  display: none; /* Oculto en pantallas pequeñas */
+}
+
+@media (min-width: 1024px) {
+  .header__nav {
+    display: flex;
+    justify-content: flex-end; /* Mueve el menú a la derecha */
+    flex: 1;
+  }
+
+  .header__nav-list {
+    display: flex;
+    gap: 2rem; /* Espacio entre los elementos del menú */
+    list-style: none;
+  }
+
+  .header__nav-link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .header__nav-link:hover {
+    background-color: var(--color-highlight);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añadir sombra al hover */
+  }
+
+  /* Ocultar el menú hamburguesa en pantallas grandes */
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* Menú hamburguesa: Solo visible en móviles */
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger__line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-text);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animación para menú hamburguesa al activarse */
+.hamburger--active .hamburger__line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger--active .hamburger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger--active .hamburger__line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Overlay del menú hamburguesa */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(246, 165, 192, 0.85), /* Rosa pastel translúcido */
+    rgba(168, 213, 186, 0.85) /* Verde menta translúcido */
+  );
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  backdrop-filter: blur(10px); /* Efecto de desenfoque para el fondo */
+}
+
+.overlay--active {
+  transform: translateY(0);
+}
+
+/* Botón de cerrar (equis) */
+.overlay__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.overlay__close:hover {
+  transform: scale(1.2); /* Efecto de hover */
+}
+
+.overlay__close svg {
+  width: 2rem;
+  height: 2rem;
+  stroke: white;
+}
+
+.overlay__nav{
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .overlay {
+    display: none; /* El overlay no es necesario en pantallas grandes */
+  }
+}
+
+/* Eliminar los puntos de las listas */
+.overlay__nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.overlay__nav-link {
+  text-decoration: none;
+  color: #FFFFFF; /* Blanco puro para un buen contraste */
+  font-size: 1.75rem;
+  margin: 1.5rem 0;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.overlay__nav-link:hover {
+  color: #F9E79F; /* Amarillo suave para hover */
+}

@@ -1,0 +1,51 @@
+---
+import "../styles/galeria.css";
+import Layout from '../layouts/Layout.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+// Datos de la galería (puedes reemplazar con imágenes reales)
+const galleryItems = [
+  {
+    image: "/images/unas_1.png",
+    description: "Uñas Acrílicas - Diseño minimalista con pedrería.",
+  },
+  {
+    image: "/images/unas_2.png",
+    description: "Extensiones de Pestañas Clásicas - Efecto natural.",
+  },
+  {
+    image: "/images/unas_3.png",
+    description: "Uñas Polygel - Colores pasteles y decoraciones.",
+  },
+  {
+    image: "/images/unas_4.png",
+    description: "Pestañas Volumen Ruso - Mirada intensa.",
+  },
+  {
+    image: "/images/unas_5.png",
+    description: "Manicura en Gel - Duración de hasta 3 semanas.",
+  },
+  {
+    image: "/images/unas_6.png",
+    description: "Laminado de Cejas - Definición y volumen natural.",
+  }
+];
+---
+<Layout>
+    <section class="gallery">
+        <h2 class="gallery__title">Galería de Nuestros Trabajos</h2>
+        <div class="gallery__grid">
+            {galleryItems.map(item => (
+            <div class="gallery-item">
+                <img src={item.image} alt={item.description} class="gallery-item__image" />
+                <p class="gallery-item__description">{item.description}</p>
+            </div>
+            ))}
+        </div>
+
+        <!-- Botón de WhatsApp reutilizable -->
+        <div class="gallery__contact">
+            <WhatsAppButton />
+        </div>
+    </section>
+</Layout>

@@ -1,0 +1,81 @@
+.about {
+    padding: 2rem 1rem;
+  }
+  
+  .hero {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about__content {
+    margin-top: 2rem;
+  }
+  
+  .about__title {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .about__text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about__awards {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .about__awards li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .contact__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+  
+  .contact__text {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero__title {
+      font-size: 3rem;
+    }
+    
+    .hero__subtitle {
+      font-size: 2rem;
+    }
+  
+    .about__title {
+      font-size: 2.5rem;
+    }
+  
+    .contact__title {
+      font-size: 2.5rem;
+    }
+  }
+  

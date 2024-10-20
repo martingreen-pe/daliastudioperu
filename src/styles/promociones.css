@@ -1,0 +1,62 @@
+.special-offers {
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, rgba(255, 204, 128, 0.8), rgba(255, 105, 180, 0.8)); /* Fondo vistoso y colorido */
+    text-align: center;
+  }
+  
+  .special-offers__title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offers__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .offer-card {
+    background-color: #ffefd5; /* Color durazno */
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .offer-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+  
+  .offer-card__title {
+    font-size: 1.8rem;
+    color: #ff4500; /* Naranja fuerte */
+    margin-bottom: 1rem;
+  }
+  
+  .offer-card__description {
+    font-size: 1.2rem;
+    color: #ff69b4; /* Rosa fuerte */
+  }
+  
+  .offer-card:active {
+    background-color: #ffe4e1; /* Color más claro al hacer clic */
+  }
+  
+  @media (min-width: 768px) {
+    .offers__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .offers__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

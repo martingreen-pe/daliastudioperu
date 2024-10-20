@@ -1,0 +1,184 @@
+{
+  "services": [
+    {
+      "servicio": "Uñas Acrílicas",
+      "detalles": "Ofrecemos uñas acrílicas de alta calidad que pueden durar hasta 4 semanas. Las clientas pueden elegir entre varios estilos y longitudes.",
+      "duracion": "2 horas",
+      "recomendaciones": "Se recomienda hidratar las manos regularmente y evitar el uso excesivo de productos químicos sin guantes.",
+      "clientes": "Ideal para clientas que buscan un estilo duradero y personalizado, que puede ir desde lo elegante hasta lo más creativo.",
+      "precio": "Desde 65 soles",
+      "imagen": "/images/unas_acrilicas.png"
+    },
+    {
+      "servicio": "Uñas Polygel",
+      "detalles": "El polygel es una combinación de lo mejor del gel y el acrílico, ofreciendo uñas flexibles y ligeras. Al igual que las uñas acrílicas, el precio base aplica para uñas de largo número 2 con diseños básicos, pero puede variar según los detalles adicionales que se elijan, como el largo y los accesorios.",
+      "duracion": "1 hora 45 minutos",
+      "recomendaciones": "Mantener las uñas hidratadas y realizar un mantenimiento cada 3 semanas para mantener la estructura intacta.",
+      "clientes": "Apto para clientas que buscan uñas ligeras, flexibles pero resistentes.",
+      "precio": "Desde 65 soles",
+      "imagen": "/images/polygel.png"
+    },
+    {
+      "servicio": "Uñas Softgel",
+      "detalles": "Las uñas softgel son ideales para clientas que prefieren una opción más ligera y flexible en comparación con el acrílico, pero con la misma durabilidad. Perfectas para quienes buscan un acabado natural y duradero.",
+      "duracion": "1 hora 30 minutos",
+      "recomendaciones": "Hidratar las uñas y realizar mantenimiento cada 3 semanas.",
+      "clientes": "Para clientas que buscan una opción más suave que las uñas acrílicas o polygel, pero con un acabado duradero.",
+      "precio": "Desde 65 soles",
+      "imagen": "/images/softgel.png"
+    },
+    {
+      "servicio": "Uñas Ruber",
+      "detalles": "El sistema ruber ofrece una cobertura flexible y resistente para proteger las uñas naturales y proporcionar un acabado impecable.",
+      "duracion": "1 hora",
+      "recomendaciones": "Mantener hidratadas las manos y evitar el contacto con productos químicos agresivos.",
+      "clientes": "Ideal para clientas que buscan proteger sus uñas naturales con un acabado flexible y resistente.",
+      "precio": "55 soles",
+      "imagen": "/images/ruber.png"
+    },
+    {
+      "servicio": "Manicura en Gel",
+      "detalles": "La manicura en gel ofrece un acabado duradero y brillante, perfecto para clientas que buscan uñas impecables durante semanas.",
+      "duracion": "45 minutos",
+      "recomendaciones": "Se recomienda mantener las uñas hidratadas para prolongar la duración del esmalte.",
+      "clientes": "Apto para todas las clientas que buscan un acabado brillante y duradero en sus uñas.",
+      "precio": "40 soles",
+      "imagen": "/images/manicura_gel.png"
+    },
+        {
+          "servicio": "Extensiones de Pestañas",
+          "detalles": "Ofrecemos varias técnicas de extensiones de pestañas según el estilo que desees, desde lo más natural hasta un volumen dramático. Las pestañas se aplican con productos de alta calidad para garantizar su duración y aspecto natural. Se recomienda realizar retoques entre 15 y 20 días para mantenerlas en perfecto estado.",
+          "duracion": "2 horas",
+          "recomendaciones": "Evitar el uso de maquillaje o productos a base de aceite en las primeras 24 horas. No mojar las pestañas durante ese tiempo. Los retoques se deben realizar entre 15 y 20 días.",
+          "precauciones": "Asegúrate de no tener infecciones oculares ni alergias. Se recomienda acudir con los ojos completamente limpios y sin maquillaje antes de la cita. Si tienes piel sensible o alergias, consulta previamente a un especialista.",
+          "clientes": "Ideal para mujeres que desean realzar sus pestañas sin usar maquillaje, adaptando el estilo a sus preferencias.",
+          "imagen": "/images/extensiones_pestanas.png",
+          "tecnicas": [
+            {
+              "nombre": "Extensiones Clásicas",
+              "descripcion": "Una extensión por cada pestaña natural, para un look sutil y natural.",
+              "clientes": "Mujeres que buscan un look discreto y natural, sin demasiada exageración.",
+              "precio": "120 soles",
+              "precioRetoque": "60 soles",
+              "imagen": "/images/extensiones_clasicas.png"
+            },
+            {
+              "nombre": "Volumen Natural",
+              "descripcion": "Aplicación de 2 a 3 extensiones por cada pestaña natural, dando un efecto más voluminoso pero sin perder la naturalidad.",
+              "clientes": "Para mujeres que quieren más volumen en sus pestañas, pero sin que se vean artificiales.",
+              "precio": "150 soles",
+              "precioRetoque": "75 soles",
+              "imagen": "/images/volumen_natural.png"
+            },
+            {
+              "nombre": "Volumen Ruso",
+              "descripcion": "Extensiones con volumen extra, aplicando de 4 a 6 extensiones por pestaña natural.",
+              "clientes": "Mujeres que desean un look más dramático y definido, ideal para eventos especiales.",
+              "precio": "180 soles",
+              "precioRetoque": "90 soles",
+              "imagen": "/images/volumen_ruso.png"
+            },
+            {
+              "nombre": "Híbridas",
+              "descripcion": "Combinación de extensiones clásicas y volumen ruso para un efecto balanceado entre natural y voluminoso.",
+              "clientes": "Mujeres que quieren un look intermedio entre lo natural y lo llamativo.",
+              "precio": "160 soles",
+              "precioRetoque": "80 soles",
+              "imagen": "/images/hibridas.png"
+            },
+            {
+              "nombre": "Mega Volumen",
+              "descripcion": "Look extremo y llamativo, con 6 o más extensiones por pestaña natural.",
+              "clientes": "Mujeres que buscan destacar con pestañas extremadamente voluminosas y llamativas.",
+              "precio": "200 soles",
+              "precioRetoque": "100 soles",
+              "imagen": "/images/mega_volumen.png"
+            },
+            {
+              "nombre": "Efecto Kim",
+              "descripcion": "Pestañas en zigzag que brindan un efecto único y moderno.",
+              "clientes": "Para quienes buscan un look moderno y audaz, inspirado en celebridades.",
+              "precio": "190 soles",
+              "precioRetoque": "95 soles",
+              "imagen": "/images/efecto_kim.png"
+            },
+            {
+              "nombre": "Efecto Rimel",
+              "descripcion": "Pestañas con el efecto de estar siempre maquilladas con rímel.",
+              "clientes": "Mujeres que prefieren un look dramático sin necesidad de maquillaje adicional.",
+              "precio": "170 soles",
+              "precioRetoque": "85 soles",
+              "imagen": "/images/efecto_rimel.png"
+            }
+          ]
+        },
+        {
+          "servicio": "Manicura Rusa",
+          "detalles": "Manicura que se enfoca en el cuidado minucioso de las cutículas, dejando las manos con un acabado prolijo y duradero. Se emplean herramientas especializadas para obtener resultados precisos y limpios.",
+          "duracion": "1 hora 15 minutos",
+          "recomendaciones": "Es ideal para quienes buscan un cuidado detallado y de larga duración en sus uñas, manteniéndolas en perfecto estado por más tiempo.",
+          "clientes": "Apto para todas las clientas que desean un look prolijo y profesional en sus manos.",
+          "precio": "70 soles",
+          "imagen": "/images/manicura_rusa.png"
+        },
+        {
+          "servicio": "Pedicura",
+          "detalles": "Pedicura completa con exfoliación, masaje y esmaltado para cuidar de tus pies.",
+          "duracion": "1 hora",
+          "recomendaciones": "Se recomienda realizar pedicura una vez al mes para mantener los pies en buen estado.",
+          "clientes": "Para todas las clientas que deseen mantener sus pies cuidados y estéticamente atractivos.",
+          "precio": "60 soles",
+          "imagen": "/images/pedicura.png"
+        },
+        {
+          "servicio": "Depilación y Cejas",
+          "imagen": "/images/depilacion_cejas.png",
+          "subservicios": [
+            {
+              "nombre": "Depilación de Rostro",
+              "detalles": "Depilación completa del rostro utilizando cera suave.",
+              "duracion": "30 minutos",
+              "precio": "40 soles",
+              "imagen": "/images/depilacion_rostro.png"
+            },
+            {
+              "nombre": "Depilación de Cejas",
+              "detalles": "Depilación precisa con cera para dar forma a las cejas.",
+              "duracion": "15 minutos",
+              "precio": "15 soles",
+              "imagen": "/images/depilacion_cejas.png"
+            },
+            {
+              "nombre": "Pigmentación de Cejas",
+              "detalles": "Pigmentación semipermanente para cejas más definidas.",
+              "duracion": "30 minutos",
+              "precio": "15 soles",
+              "imagen": "/images/pigmentacion_cejas.png"
+            },
+            {
+              "nombre": "Laminado de Cejas",
+              "detalles": "Laminado que proporciona una apariencia de cejas más llenas y definidas.",
+              "duracion": "45 minutos",
+              "precio": "45 soles",
+              "imagen": "/images/laminado_cejas.png"
+            },
+            {
+              "nombre": "Planchado de Cejas",
+              "detalles": "Planchado de cejas para un look más definido.",
+              "duracion": "45 minutos",
+              "precio": "45 soles",
+              "imagen": "/images/planchado_cejas.png"
+            }
+          ]
+        },
+        {
+          "servicio": "Lifting de Pestañas",
+          "detalles": "Tratamiento que levanta y riza tus pestañas naturales, ofreciendo un look despierto sin necesidad de rímel o rizador.",
+          "duracion": "1 hora",
+          "recomendaciones": "Perfecto para quienes desean un rizado natural sin usar extensiones.",
+          "clientes": "Ideal para clientas con pestañas naturales que desean un look más despierto.",
+          "precio": "100 soles",
+          "imagen": "/images/lifting_pestanas.png"
+        }
+  ]
+}

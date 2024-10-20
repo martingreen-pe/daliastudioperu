@@ -1,0 +1,46 @@
+---
+import "../styles/depilacion.css";
+import Layout from '../layouts/Layout.astro';
+
+// Cargar el archivo JSON de servicios de depilación y cejas desde el directorio público
+const servicesData = await Astro.glob('../../public/data/services.json');
+
+// Filtrar solo los subservicios de depilación y cejas
+const depilacionCejasService = servicesData[0].services.find(service => service.servicio === 'Depilación y Cejas');
+---
+<Layout>
+  <section class="depilacion">
+    <div class="hero">
+      <h1 class="hero__title">Depilación y Cejas</h1>
+      <p class="hero__subtitle">Resalta tu belleza con nuestros servicios de depilación y cejas personalizados para ti.</p>
+    </div>
+
+    <!-- Subservicios de depilación y cejas -->
+    <div class="services">
+      <h2 class="services__title">Nuestros Servicios de Depilación y Cejas</h2>
+      <div class="services__grid">
+        {depilacionCejasService.subservicios.map((sub) => (
+          <div class="service-card">
+            <img src={sub.imagen} alt={sub.nombre} class="service-card__image" />
+            <h3 class="service-card__title">{sub.nombre}</h3>
+            <p class="service-card__details">{sub.detalles}</p>
+            <p class="service-card__duration"><strong>Duración:</strong> {sub.duracion}</p>
+            <p class="service-card__price"><strong>Precio:</strong> {sub.precio}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Galería de trabajos -->
+    <div class="gallery">
+      <h2 class="gallery__title">Galería de Trabajos</h2>
+      <div class="gallery__grid">
+        <img src="/images/gallery/depilacion_cejas_1.jpg" alt="Trabajo de depilación y cejas 1" class="gallery__image" />
+        <img src="/images/gallery/depilacion_cejas_2.jpg" alt="Trabajo de depilación y cejas 2" class="gallery__image" />
+        <img src="/images/gallery/depilacion_cejas_3.jpg" alt="Trabajo de depilación y cejas 3" class="gallery__image" />
+        <img src="/images/gallery/depilacion_cejas_4.jpg" alt="Trabajo de depilación y cejas 4" class="gallery__image" />
+        <!-- Agrega más imágenes según sea necesario -->
+      </div>
+    </div>
+  </section>
+</Layout>

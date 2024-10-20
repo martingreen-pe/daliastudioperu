@@ -1,0 +1,39 @@
+.footer {
+  padding: 2rem 1rem;
+  background-color: #F6A5C0; /* Rosa pastel suave */
+  color: var(--color-text-light); /* Color de texto claro */
+  text-align: center;
+  position: relative;
+}
+
+.footer__text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer__social-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer__social-link:hover {
+  transform: scale(1.1);
+}
+
+.footer__social-icon {
+  width: 24px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .footer__social-icon {
+    width: 32px;
+  }
+}

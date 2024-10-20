@@ -1,0 +1,71 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Altura fija en píxeles */
+    background: url('/images/hero-image.png') no-repeat center center/cover; /* Imagen de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero__content {
+    color: white; /* Color blanco para mejorar la legibilidad */
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido detrás del texto */
+    border-radius: 10px;
+  }
+  
+  .hero__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: white; /* Texto blanco */
+  }
+  
+  .hero__cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero__cta:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  @media (min-width: 768px) {
+    .hero__title {
+      font-size: 3rem;
+    }
+  
+    .hero__subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .hero__cta {
+      font-size: 1.2rem;
+    }
+  }
+  

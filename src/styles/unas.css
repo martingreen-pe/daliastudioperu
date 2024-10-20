@@ -1,0 +1,130 @@
+.unas {
+    padding: 2rem 1rem;
+  }
+  
+  .hero {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.5rem;
+  }
+  
+  /* Estilo para la información general de los precios */
+  .general-info {
+    background-color: var(--color-secondary-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .general-info__text {
+    font-size: 1.1rem;
+    color: var(--color-text-dark);
+    font-weight: 500;
+  }
+  
+  .general-info__text strong {
+    color: var(--color-primary);
+  }
+  
+  .services {
+    margin-top: 2rem;
+  }
+  
+  .services__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+  
+  .services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+  
+  .service-card__details {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card__duration,
+  .service-card__price,
+  .service-card__clients {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gallery {
+    margin-top: 4rem;
+  }
+  
+  .gallery__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+  
+  .gallery__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .gallery__image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .services__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .gallery__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .services__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .gallery__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
