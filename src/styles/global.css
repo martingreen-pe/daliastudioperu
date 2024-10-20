@@ -80,7 +80,8 @@ p {
 /* Estilo para los encabezados h2 del artículo */
 .post-body h2 {
   font-size: 2rem;
-  color: var(--color-primary); /* Color principal de tu paleta */
+  /*color: var(--color-primary);  #2f1c6a Color principal de tu paleta */
+  color: #2f1c6a;
   border-left: 4px solid var(--color-secondary); /* Barra lateral de color */
   padding-left: 1rem;
   margin-bottom: 1.5rem; /* Espaciado adicional */
@@ -91,7 +92,8 @@ p {
 .post-body p {
   margin-bottom: 1.5rem; /* Espaciado entre párrafos */
   line-height: 1.8; /* Mejora la legibilidad */
-  color: var(--color-text); /* Color de texto principal */
+  /*color: var(--color-text);  Color de texto principal */
+  color: #36344d;
 }
 
 .post-body ul {
@@ -101,7 +103,7 @@ p {
 /* Estilo de las negritas */
 .post-body strong {
   font-weight: bold;
-  color: #414a69; /* Negrita con color de acento */
+  color: #36344d; /* Negrita con color de acento */
 }
 
 /* Estilo para blockquotes (citas) */

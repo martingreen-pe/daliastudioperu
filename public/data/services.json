@@ -58,56 +58,56 @@
               "nombre": "Extensiones Clásicas",
               "descripcion": "Una extensión por cada pestaña natural, para un look sutil y natural.",
               "clientes": "Mujeres que buscan un look discreto y natural, sin demasiada exageración.",
-              "precio": "120 soles",
-              "precioRetoque": "60 soles",
+              "precio": "70 soles",
+              "precioRetoque": "50 soles",
               "imagen": "/images/extensiones_clasicas.png"
             },
             {
               "nombre": "Volumen Natural",
               "descripcion": "Aplicación de 2 a 3 extensiones por cada pestaña natural, dando un efecto más voluminoso pero sin perder la naturalidad.",
               "clientes": "Para mujeres que quieren más volumen en sus pestañas, pero sin que se vean artificiales.",
-              "precio": "150 soles",
-              "precioRetoque": "75 soles",
+              "precio": "80 soles",
+              "precioRetoque": "50 soles",
               "imagen": "/images/volumen_natural.png"
             },
             {
               "nombre": "Volumen Ruso",
               "descripcion": "Extensiones con volumen extra, aplicando de 4 a 6 extensiones por pestaña natural.",
               "clientes": "Mujeres que desean un look más dramático y definido, ideal para eventos especiales.",
-              "precio": "180 soles",
-              "precioRetoque": "90 soles",
+              "precio": "85 soles",
+              "precioRetoque": "50 soles",
               "imagen": "/images/volumen_ruso.png"
             },
             {
               "nombre": "Híbridas",
               "descripcion": "Combinación de extensiones clásicas y volumen ruso para un efecto balanceado entre natural y voluminoso.",
               "clientes": "Mujeres que quieren un look intermedio entre lo natural y lo llamativo.",
-              "precio": "160 soles",
-              "precioRetoque": "80 soles",
+              "precio": "85 soles",
+              "precioRetoque": "50 soles",
               "imagen": "/images/hibridas.png"
             },
             {
               "nombre": "Mega Volumen",
               "descripcion": "Look extremo y llamativo, con 6 o más extensiones por pestaña natural.",
               "clientes": "Mujeres que buscan destacar con pestañas extremadamente voluminosas y llamativas.",
-              "precio": "200 soles",
-              "precioRetoque": "100 soles",
+              "precio": "85 soles",
+              "precioRetoque": "50 soles",
               "imagen": "/images/mega_volumen.png"
             },
             {
               "nombre": "Efecto Kim",
               "descripcion": "Pestañas en zigzag que brindan un efecto único y moderno.",
               "clientes": "Para quienes buscan un look moderno y audaz, inspirado en celebridades.",
-              "precio": "190 soles",
-              "precioRetoque": "95 soles",
+              "precio": "90 soles",
+              "precioRetoque": "50 soles",
               "imagen": "/images/efecto_kim.png"
             },
             {
               "nombre": "Efecto Rimel",
               "descripcion": "Pestañas con el efecto de estar siempre maquilladas con rímel.",
               "clientes": "Mujeres que prefieren un look dramático sin necesidad de maquillaje adicional.",
-              "precio": "170 soles",
-              "precioRetoque": "85 soles",
+              "precio": "85 soles",
+              "precioRetoque": "50 soles",
               "imagen": "/images/efecto_rimel.png"
             }
           ]
@@ -118,7 +118,7 @@
           "duracion": "1 hora 15 minutos",
           "recomendaciones": "Es ideal para quienes buscan un cuidado detallado y de larga duración en sus uñas, manteniéndolas en perfecto estado por más tiempo.",
           "clientes": "Apto para todas las clientas que desean un look prolijo y profesional en sus manos.",
-          "precio": "70 soles",
+          "precio": "60 soles",
           "imagen": "/images/manicura_rusa.png"
         },
         {
@@ -127,7 +127,7 @@
           "duracion": "1 hora",
           "recomendaciones": "Se recomienda realizar pedicura una vez al mes para mantener los pies en buen estado.",
           "clientes": "Para todas las clientas que deseen mantener sus pies cuidados y estéticamente atractivos.",
-          "precio": "60 soles",
+          "precio": "40 soles",
           "imagen": "/images/pedicura.png"
         },
         {
@@ -177,7 +177,7 @@
           "duracion": "1 hora",
           "recomendaciones": "Perfecto para quienes desean un rizado natural sin usar extensiones.",
           "clientes": "Ideal para clientas con pestañas naturales que desean un look más despierto.",
-          "precio": "100 soles",
+          "precio": "45 soles",
           "imagen": "/images/lifting_pestanas.png"
         }
   ]

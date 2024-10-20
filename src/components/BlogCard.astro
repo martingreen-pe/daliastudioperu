@@ -27,21 +27,23 @@ function getImageUrl(post) {
   <h2>Últimas publicaciones</h2>
   <div class="post-grid">
     {posts.map((post) => (
-      <article class="post-card">
-        {post.data.image && (
-          <img src={getImageUrl(post)} alt={post.data.title} class="post-card__image" />
-        )}
-        <div class="post-content">
-          <h3>{post.data.title}</h3>
-          <p>{truncate(post.data.description, 100)}</p>
-          <div class="tags">
-            {post.data.tags.map((tag) => (
-              <span class="tag">{tag}</span>
-            ))}
+      <a href={`/blog/${post.slug}`} class="post-card__link">
+        <article class="post-card">
+          {post.data.image && (
+            <img src={getImageUrl(post)} alt={post.data.title} class="post-card__image" />
+          )}
+          <div class="post-content">
+            <h3>{post.data.title}</h3>
+            <p>{truncate(post.data.description, 100)}</p>
+            <div class="tags">
+              {post.data.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
           </div>
-          <a href={`/blog/${post.slug}`} class="post-card__link">Leer más</a>
-        </div>
-      </article>
+        </article>
+      </a>
     ))}
   </div>
 </section>
+
